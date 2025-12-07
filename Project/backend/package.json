@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-  "start": "node dist/server.js",
-  "build": "tsc -p ."
-}
-,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/server/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p .",
+    "fetch": "ts-node src/utils/fetchData.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
     "ts-node": "^10.9.2",
